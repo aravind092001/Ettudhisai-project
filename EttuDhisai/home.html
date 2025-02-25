@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.png">
+    <title>Ettu Dhisai Traders</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section id="header">
+        <a href="#"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="header1">
+        <div class="logo">
+            <img src="Images/ED8.png" alt="logo">
+        </div>
+        <div class="welcometo">
+            Welcome To
+        </div>
+        <div class="importexport">
+            Ettu Dhisai Import Export
+        </div>
+        <div class="supplying">
+            Supplying The Finest, Freshest Fruits & Vegetables From Around The Globe!
+        </div>
+        </div>
+        <section>
+            <div class="container">
+                <video id="myVideo" autoplay muted loop>
+                  <source src="Video/Ettu Dhisai All V.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div id="textOverlay" class="text-overlay">
+                    <h1>Who We Are?</h1>
+                    <p>We Ettudhisai, delivering the finest agro-based products to customers worldwide. We have established ourselves as a trusted name known for quality, reliability, and sustainability. We are promoting fair trade practices, and ensuring the highest standards of product quality. We are committed to nurturing partnerships, fostering growth, and contributing to the well-being of the agricultural community.</p>
+                </div>
+                <button id="prevBtn" class="nav-btn"> < </button>
+                <button id="nextBtn" class="nav-btn"> > </button>
+              </div>
+        </section>
+    <div class="space1"></div> 
+    <div class="mangopulp">
+        <img src="Images/ETTUDHISAI BANNER (1).png" alt="Mango Pulp">
+        </div>
+
+        <div class="space"></div>
+        <div class="ourproducts">
+            <div class="ourproductsword">
+                Our Products
+            </div>
+            <div class="arrow">
+                View All<a href="products.html"><img src="Images/ei_arrow-right.png" alt="Arrow key"></a>
+            </div>
+            <div class="wrapper">
+            <div class="box">
+                <img src="Images/WhatsApp Image 2023-12-18 at 5.58.25 PM.jpeg" alt="Onion image">
+                <div class="layer">
+                    <h2>Onions</h2>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Images/group of mangoes.jpg" alt="Mango Pulp Image">
+                <div class="layer">
+                    <h2>Fresh Mangoes</h2>
+                </div>
+            </div> 
+            </div>
+            </div>
+
+            <div class="footerele"></div>
+
+            <footer>
+                <div class="footer-info">
+                    <div class="footer-width image">
+                        <img src="Images/ED8.png" alt="Logo Image">
+                    </div>
+                    <div class="footer-width links">
+                        <h2>Navigation</h2>
+                        <ul>
+                            <li><a href="aboutus.html">About us</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-width contactpage">
+                        <h2>Contact Us</h2>
+                        <ul>
+                            <li>
+                                <span><i class="fas fa-map-marker-alt"></i></span>
+                                <p>
+                                    No :49/20 Varadharajan Street Vetri Nagar, Chennai-600082
+                                </p>
+                            </li>
+                            <li>
+                                <span><i class="far fa-envelope"></i></span>
+                                <a href="#">ettudhisai@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const textOverlay = document.getElementById("textOverlay");
+                    const video = document.getElementById("myVideo");
+                    const videos = ["Video/Ettu Dhisai All V.mp4", "Video/Ettu Dhisai All V (1).mp4", "Video/Ettu Dhisai All V (3).mp4"];
+                    const textArray = [
+                      `<h1 style="text-align: center; font-family: poppins , sans-serif"> Who We Are?</h1>
+                      We Ettudhisai, delivering the finest agro-based products to customers worldwide. 
+                      We have established ourselves as a trusted name known for quality, reliability, and sustainability. 
+                      We are promoting fair trade practices, and ensuring the highest standards of product quality. 
+                      We are committed to nurturing partnerships, fostering growth, and contributing to the well-being of the agricultural community.`,
+                      `<h1 style="text-align: center;"> Where does our products come from?</h1>
+                      Connecting with local farmers to ensure a steady and cost-effective supply of agricultural products is a smart strategy for your Agro-based export house. 
+                      This not only benefits your business but also supports local agricultural communities.`,
+                      `<h1 style="text-align: center;"> Why choose us?</h1>
+                      <b>Quality Assurance:</b> Our products undergo rigorous quality checks to meet international standards.<br>
+                      <b>Sustainability:</b> We prioritize eco-friendly farming and sourcing practices.<br>
+                      <b>Global Reach:</b> We serve clients across the world, providing access to diverse markets.`
+                    ];
+                  
+                    let videoIndex = 0;
+                    let textIndex = 0;
+                    let interval;
+                  
+                    function playVideoAndText() {
+                      clearInterval(interval);
+                  
+                      video.src = videos[videoIndex];
+                      video.load();
+                      video.play();
+                  
+                      showText(textIndex);
+                  
+                      interval = setInterval(function() {
+                        videoIndex = (videoIndex + 1) % videos.length;
+                        textIndex = videoIndex;
+                        video.src = videos[videoIndex];
+                        video.load();
+                        video.play();
+                        showText(textIndex);
+                      }, 10000);
+                    }
+                  
+                    playVideoAndText();
+                  
+                    document.getElementById("prevBtn").addEventListener("click", function() {
+                      clearInterval(interval);
+                      videoIndex = (videoIndex - 1 + videos.length) % videos.length;
+                      textIndex = videoIndex;
+                      playVideoAndText();
+                    });
+                  
+                    document.getElementById("nextBtn").addEventListener("click", function() {
+                      clearInterval(interval);
+                      videoIndex = (videoIndex + 1) % videos.length;
+                      textIndex = videoIndex;
+                      playVideoAndText();
+                    });
+                  
+                    function showText(index) {
+                      textOverlay.innerHTML = textArray[index];
+                    }
+                  });
+            </script>
+</body>
+</html>
